@@ -20,16 +20,20 @@ function addDogImages(dogImg){
     })
 }
 
-//Challenge 2
+//Challenge 2 + 3
 function breedList(breed){
     let list = document.getElementById('dog-breeds')
     for(const breedKey in breed.message){
-        let li = document.createElement('li')
+    let li = document.createElement('li')
+    li.addEventListener('click', (event) => {
+        event.currentTarget.style.color = 'red'})           
         li.innerText = breedKey
         list.appendChild(li)
     }
 }
 
-//Challenge 3
+//Challenge 4
 
-
+function breedByLetterHelper(letter){
+    
+}
